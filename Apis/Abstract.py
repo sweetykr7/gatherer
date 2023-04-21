@@ -47,7 +47,8 @@ class AbsTROccurs(object):
         :param code:
         :return:
         """
-        self.ResFileName = "C:\\eBEST\\xingAPI\\Res\\" + code + ".res"
+        self.ResFileName = "Res\\" + code + ".res"
+        # self.ResFileName = "C:\\eBEST\\xingAPI\\Res\\" + code + ".res"
 
     def singleRequest(self, *args):
         pass
@@ -79,7 +80,9 @@ class AbsReal(object):  ## 해외 선물 호가
         self.writer = csv.writer(self.f)
 
     def start(self, code):
-        self.ResFileName = "C:\\eBEST\\xingAPI\\Res\\" + code + ".res"  # RES 파일 등록
+        self.ResFileName = "Res\\" + code + ".res"  # RES 파일 등록
+        # self.ResFileName = "C:\\eBEST\\xingAPI\\Res\\" + code + ".res"  # RES 파일 등록
+
 
     def add_item(self, item, option):
         # 실시간데이터 요청 종목 추가
